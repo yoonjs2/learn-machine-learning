@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import fileinput
-import numpy as np
+
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 # Calculate linear regression based on least square method
@@ -50,8 +51,8 @@ class LSM:
         plt.plot(self.list_xi, self.list_yi, 'ro', x, cf[0] + cf[1] * x)
         plt.show()
 
-# Main starts here #####
 
+# Main starts here #####
 lsm = LSM()
 
 for line in fileinput.input():
